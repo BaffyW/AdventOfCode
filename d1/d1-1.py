@@ -50,7 +50,6 @@ for line in inFile:
 dataCopy = data
     
 def find2020():
-    tries = 0
     for x in data:
         for y in data:
             for z in data:
@@ -60,4 +59,7 @@ def find2020():
 
                 count = (tempX + tempY + tempZ)
                 if(count == 2020):
+                    print(tempX*tempY*tempZ)
                     return (tempX*tempY*tempZ)
+
+find2020()
